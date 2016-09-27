@@ -16,7 +16,11 @@ app.get('/article-one', function (req, res) {
       res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 
 });
-
+varcounter=0;
+app.get('/counter', function (req, res) {
+  counter=counter+1;
+  app.send("This page has been accessed "+counter.toString()+" times");
+});
 app.get('/article-two', function (req, res) {
   res.send('Article two will be served here');
 });
