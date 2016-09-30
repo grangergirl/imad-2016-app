@@ -3,7 +3,12 @@
     <head>
         <link href="/ui/style.css" rel="stylesheet" />
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
+<script>
+    function counter(){
+        counter+=1;
+        document.getElementById("clicker").innerHTML=counter.toString();
+    }
+</script>
     </head>
     <body>
         
@@ -36,6 +41,12 @@
                     <li>Interested to learn anything cool</li>
                 </ul>
             </div>
+            <hr/>
+            I'm bored and I want to eperiment..
+            <Button id="clicker" onClick="counter()">0</Button> is the number of times the button has been clicked.
         </div>
+        <script>
+            var counter=0;
+        </script>
     </body>
 </html>
