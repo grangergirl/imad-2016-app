@@ -1,7 +1,6 @@
 
 button.onClick=function()
 {
-    counter+=1;
     var request=new XMLHttpRequest();
     request.onreadystatechange= function()
     {
@@ -17,5 +16,6 @@ button.onClick=function()
         }
     };
    
-    
+    request.open('GET',"http://grangergirl.imad.hasura-app.io/counter",true);
+    request.send(null);
 };
