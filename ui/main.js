@@ -4,5 +4,6 @@ button.onClick=function()
 {
     counter+=1;
     button.innerHTML=counter.toString();
+    alert("what");
     
 };
