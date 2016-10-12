@@ -18,8 +18,8 @@ app.get('/article-one', function (req, res) {
 });
 var counter=0;
 app.get('/madder', function (req, res) {
-  //counter=counter+1;
-  app.send("Sending...");
+  counter=counter+1;
+  res.send(counter.toString());
 });
 app.get('/article-two', function (req, res) {
   res.send('Article two will be served here');
