@@ -1,4 +1,4 @@
-
+var button=document.getElementById("clicker");
 button.onClick=function()
 {
     var request=new XMLHttpRequest();
@@ -9,8 +9,8 @@ button.onClick=function()
             if(request.status===200)
             {
                 var counter=request.responseText;
-                var button=document.getElementById("clicker");
-                 button.innerHTML=counter.toString();
+                var span=document.getElementById("bla");
+                 span.innerHTML=counter.toString();
                  alert("what");
             }
         }
