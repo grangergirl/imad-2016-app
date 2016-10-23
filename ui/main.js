@@ -1,6 +1,7 @@
 var button=document.getElementById("clicker");
 button.onClick=function()
-{
+{ var span=document.getElementById("bla");
+                 span.innerHTML="changed";
     var request=new XMLHttpRequest();
     request.onreadystatechange= function()
     {
