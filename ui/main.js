@@ -1,4 +1,5 @@
 var button=document.getElementById("clicker");
+alert(button.innerHTML.toString());
 button.onClick=function()
 { var span=document.getElementById("bla");
                  span.innerHTML="changed";
